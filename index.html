@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Monty's Guitar's</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link to javascript -->
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="owner" class="primary">Owner:</label>
+          <!-- <input type="text" id="owner"  required> -->
+          <select id="owner">
+            <option value="" disabled selected></option>
+            <option value="Jimi Hendrix">Jimi Hendrix</option>
+            <option value="Jimi Satriani">Joe Satriani</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="guitar" class="primary">Guitar:</label>
+          <select id="guitar">
+            <option value="" disabled selected></option>
+            <option value="Fender Strat">Fender Strat</option>
+            <option value="Gibson Les Paul">Gibson Les Paul</option>
+            <option value="Ibanez">Ibanez</option>
+            <option value="PRS Custom Strat">PRS Custom Strat</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="frets" class="primary">Frets:</label>
+          <select id="frets">
+            <option value="" disabled selected></option>
+            <option value="24">24</option>
+            <option value="21">21</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class="primary">Category:</label>
+            <select id="category">
+              <option value="" disabled selected></option>
+              <option value="Electric">Electric</option>
+              <option value="Acoustic">Acoustic</option>
+              <option value="Hybrid">Hybrid</option>
+            </select>
+        </div>
+      </div>
+      <input id="form-result" type="submit" value="save">
+      <button id="delete-all">Delete All</button>
+    </form>
+
+
+    <h1>Guitar List</h1>
+    <div id="guitar-list">
+
+    </div>
+
+  </body>
+</html>
